@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/logo" href="./images/logo.png">
+    <title>Fruit Burst</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- lato font from google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- font awesome icon -->
+    <script src="https://kit.fontawesome.com/164a531203.js" crossorigin="anonymous"></script>
+    <!-- custom color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                "bg-primary" : '#F85559',
+                "icon" : '#121212',
+
+              }
+            }
+          }
+        }
+    </script>
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+
+</head>
+<body class="font-lato">
+    <header class="max-w-7xl mx-auto">
+        <!-- nav section -->
+        <nav class="container flex bg-bg-primary justify-between items-center px-3 gap-7 h-24 md:px-12 mt-1 md:mt-10 rounded-full">
+            <div class="hidden md:block">
+                <ul class="flex gap-7 text-white font-medium">
+                    <a href="">Home</a>
+                    <a href="">About Us</a>
+                    <a href="">Shop</a>
+                    <a href="">All Fruits</a>
+                </ul>
+            </div>
+            <div class="flex lg:flex items-center gap-1">
+                <img class="w-7 md:w-14 h-7 md:h-14" src="./images/logo.png" alt="">
+                <h3 class="text-white md:text-white text-3xl md:text-4xl font-bold">Fruit Burst</h3>
+            </div>
+            <div class="hidden lg:block lg:relative">
+                <input class="h-14 px-3 text-xl rounded-full outline-none" type="text" placeholder="search here">
+                <i class="fa-solid fa-magnifying-glass lg:absolute top-4 right-5 text-xl text-icon cursor-pointer"></i>
+            </div>
+            <div class="md:hidden cursor-pointer">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <!-- nav ends here -->
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
